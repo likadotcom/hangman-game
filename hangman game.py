@@ -47,6 +47,7 @@ def draw_hangman(chances):
         turtle.penup()
         turtle.goto(-135,-35)
     if chances == 6:
+        # draw head
         turtle.goto(-74, 140)
         turtle.pendown()
         turtle.right(90)
@@ -144,5 +145,6 @@ if guessed == word:
     print(GREEN, "You won! The word was in fact", word.capitalize(), RESET)
 else:
     print(RED, "You lost. The word was", word.capitalize(), RESET)
+
 
 
